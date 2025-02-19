@@ -1,0 +1,89 @@
+:root {
+    --white: #ffffff;
+    --blue: #3498db;
+    --red: #e74c3c;
+    --black: #333;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border: 1px solid #ccc;
+    --option-color: #f39c12; /* Assuming this is the color you want for option-btn */
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.message {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: var(--white);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.btn, 
+.delete-btn,
+.option-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: var(--blue);
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: var(--red);
+}
+
+.option-btn {
+    background-color: var(--option-color);
+}
+
+.btn:hover, 
+.delete-btn:hover,
+.option-btn:hover {
+    background-color: var(--black);
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container form {
+    
+    width: 500px;
+    border-radius: 5px;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.form-container .box {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid antiquewhite;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
